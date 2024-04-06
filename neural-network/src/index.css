@@ -1,0 +1,140 @@
+#container {
+    width: 1200px;
+    height: 650px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 600px 200px 400px;
+    grid-template-rows: 50px 300px 300px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+#editor {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+#editor-title {
+    width: 600px;
+    height: 50px;
+    border: 1px solid black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#sidebar {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#sidebar-title {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#new-node {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 9px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    border: 1px solid black;
+    margin-top: 24px;
+}
+
+.editor-section {
+    margin: 6px 6px 24px 6px;
+    font-size: 12px;
+}
+
+.editor-item > * {
+    margin: 3px;
+    font-size: 9px;
+}
+
+#controls {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#controls-title {
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#plot-container {
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px;
+}
+
+#loss-plot {
+    /* width: 300px;
+    height: 300px; */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#function-plot {
+    /* width: 300px;
+    height: 300px; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#editor-title, #sidebar-title, #controls-title {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.control-section {
+    margin: 6px;
+}
+
+.control-item {
+    margin: 1px 3px 1px 3px;
+    font-size: 9px;
+}
+
+.react-flow__attribution {
+    display: none;
+}
+
+.react-flow__node {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 10px;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+}
+
+.react-flow__edge-text {
+    font-size: 5px;
+    color: black;
+}
