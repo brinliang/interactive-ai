@@ -14,8 +14,7 @@ const config: Configuration = {
             {
                 test: /\.css?$/,
                 use: ['style-loader', 'css-loader'],
-                // exclude: /node_modules/,
-                exclude: /node_modules\/(?!reactflow).*/,
+                exclude: /node_modules\/(?!@xyflow).*/,
             }
         ]
     },

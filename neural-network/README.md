@@ -1,13 +1,22 @@
-# setup
+Web application to create, train, and visualize feedforward neural networks.
 
+# usage
 
-### install node modules
+### install
+
 ```npm install```
 
 
-### run development server
+### run
+
 ```npm run dev```
 
 
-### create build
+### build
+
 ```npm run build```
+
+
+### test
+
+```npm run test```

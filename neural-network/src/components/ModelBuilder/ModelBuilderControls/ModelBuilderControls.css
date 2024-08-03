@@ -1,0 +1,40 @@
+#model-builder-controls-new-node {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 9px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+#model-builder-controls-container {
+    width: 500px;
+    grid-column: 2 / 3;
+    display: flex;
+}
+
+.model-builder-controls-header {
+    font-weight: bold;
+}
+
+#drag-and-drop {
+    border-right: 1px solid black;
+}
+
+.model-builder-controls-item {
+    width: 250px;
+    height: 100px;
+    margin: auto;
+}
+
+.model-builder-controls-item > * {
+    margin: 10px 0px 3px 30px;
+}
+
+
+.model-builder-controls-item > input {
+    width: 70px;
+}
