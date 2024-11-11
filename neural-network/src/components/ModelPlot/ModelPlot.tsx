@@ -29,7 +29,12 @@ const ModelPlot = ({ nodes, points, domain, activation, functionString }: {
         let yMax = -Infinity;
 
         for (let i = domain[0]; i <= domain[1]; i += ((domain[1] - domain[0]) / 100)) {
-            let trueY = eval(replaceAll(functionString, 'x', i.toString()));
+            let trueY;
+            try {
+                trueY = eval(replaceAll(functionString, 'x', i.toString()));
+            } catch (e) {
+                trueY = 0;
+            }
             let [_, predictedY] = inference(nodes, i, activations[activation]);
             trueFx.push([i, trueY]);
             predictedFx.push([i, predictedY]);
