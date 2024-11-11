@@ -4,10 +4,11 @@
     height: 600px;
     grid-template-columns: 500px 600px;
     grid-template-rows: 300px 300px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     border: 2px solid black;
     margin: auto;
+    margin-top: 20px;
 }
 
 #plot-container {
@@ -26,9 +27,9 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 9px;
     margin: auto;
-    padding: 10px 0px 0px 0px;
+    padding: 11px 0px 0px 0px;
 }
 
 .react-flow__edge-text {

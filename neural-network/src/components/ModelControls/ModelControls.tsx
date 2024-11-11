@@ -106,6 +106,12 @@ const ModelControls = ({
                             <option value='relu'>ReLU</option>
                         </select>
                     </div>
+                    <div className='model-controls-item'>
+                        Batch Size: <input name='dataset-size' type='number' style={{ width: 60 }} value={numPoints} onChange={e => setNumPoints(Number(e.target.value))} />
+                    </div>
+                    <div className='model-controls-item'>
+                        Epochs: <input name='epochs' type='number' style={{ width: 60 }} value={epochs} onChange={e => setEpochs(Number(e.target.value))} />
+                    </div>
                 </div>
                 <div className='model-controls-section' id='train'>
                     <div className='model-controls-section-header'>Train Model</div>
@@ -121,12 +127,7 @@ const ModelControls = ({
                     <div className='model-controls-item'>
                         Variance: <input name='variance' type='number' style={{ width: 60 }} value={variance} onChange={e => setVariance(Number(e.target.value))} />
                     </div>
-                    <div className='model-controls-item'>
-                        Batch Size: <input name='dataset-size' type='number' style={{ width: 60 }} value={numPoints} onChange={e => setNumPoints(Number(e.target.value))} />
-                    </div>
-                    <div className='model-controls-item'>
-                        Epochs: <input name='epochs' type='number' style={{ width: 60 }} value={epochs} onChange={e => setEpochs(Number(e.target.value))} />
-                    </div>
+
                     <div className='model-controls-item'>
                         <button className='model-controls-button' onClick={trainModel}>Train</button>
                     </div>
